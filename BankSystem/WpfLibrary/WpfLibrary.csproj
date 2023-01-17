@@ -1,9 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Classes\" />
+    <Folder Include="Models\UserControls\AccountControls\" />
+    <Folder Include="Models\UserControls\RequestControls\" />
+    <Folder Include="Models\UserControls\TransactionControls\" />
+    <Folder Include="Models\UserControls\WorkerControls\" />
+    <Folder Include="Models\UserControls\PersonControls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BankSystem\DatabaseLibrary.csproj" />
+  </ItemGroup>
 
 </Project>
